@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+     <!-- add font family link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+      <!-- add daisyui & tailwind link -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+ <script src="https://cdn.tailwindcss.com"></script>
+ 
+ <style>
+     .font-family{
+         font-family: "Lexend", sans-serif;
+     }
+     .nav-ber{
+     
+     position: sticky;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1000
+     }
+     *{
+       margin: 0;
+       padding: 0;
+     }
+     .btn-donation{
+       background-color: #B4F461;
+       
+     }
+ </style>
+ 
+</head>
+<body class="font-family">
+    <header>
+        <nav class="flex justify-between px-20 pb-20 pt-3 bg-slate-100 nav-ber">
+            <div>
+                <button id="home-btn" class=" btn btn-sm" style = "background-color: #B4F461;">Home</button>
+            </div>
+            <div class="flex gap-x-2">
+                <img src="assets/logo.png" alt="">
+                <h3 class="flex items-center text-2xl font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class="flex gap-x-2">
+                <img class="w-8 h-8" src="assets/coin.png" alt="">
+                <span id="top-balance" class="text-2xl font-bold">5500</span>
+                <p class="text-2xl font-bold">BDT</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the issue with this code?</div>
+            <div class="collapse-content">
+              <p>input.value.text is not a valid property</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What will be the data type of “count”?</div>
+            <div class="collapse-content">
+              <p>string</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">We can select a single element in the DOM by using ______</div>
+            <div class="collapse-content">
+              <p>getElementById(), querySelector()</p>
+            </div>
+          </div>
+
+
+    </main>
+  
+  <script>
+    document.getElementById('home-btn').addEventListener('click',function(){
+   window.history.back()
+
+})
+
+  </script> 
+</body>
+</html>

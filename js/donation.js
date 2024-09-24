@@ -4,8 +4,13 @@ document.getElementById('btn-nowakhali').addEventListener('click',function(){
     const inputNowakhali = document.getElementById('input-nowakhali').value ;
     const inputNumber = parseFloat(inputNowakhali)
     if(inputNumber <= 0 || isNaN(inputNumber)){
-        document.getElementById('input-error').classList.remove ('hidden')
+        alert('invalid input')
+
         return;
+    }else{
+        
+        alert('successful')
+        
     }
     const balanceNowakhali = document.getElementById('balance-nowakhali').innerText;
     const balanceNumber = parseFloat(balanceNowakhali)
@@ -15,6 +20,10 @@ document.getElementById('btn-nowakhali').addEventListener('click',function(){
     const totalBalance = topBalanceNumber - inputNumber
     const topUpdateBalance = document.getElementById('top-balance').innerText= totalBalance
     const newBalanceNowakhali = document.getElementById('balance-nowakhali').innerText= nowakhaliTotalDonation
+
+    const p = document.createElement('p')
+    p.innerText= `${nowakhaliTotalDonation}Taka is Donated for famine-2024 at nowakhali, Bangladesh`
+    document.getElementById('history-nowakhali').appendChild(p)
 })
 
 // donation for feni--------
@@ -23,9 +32,13 @@ document.getElementById('btn-feni').addEventListener('click',function(){
     const inputNumber = parseFloat(inputFeni)
 
     if(inputNumber <= 0 || isNaN(inputNumber)){
-        document.getElementById('input2-error').classList.remove('hidden')
-        return ;
-       
+        alert('invalid input')
+
+        return;
+    }else{
+        
+        alert('successful')
+        
     }
     const balanceFeni = document.getElementById('balance-feni').innerText
     const balanceNumber = parseFloat(balanceFeni)
@@ -36,6 +49,10 @@ document.getElementById('btn-feni').addEventListener('click',function(){
     const topNewBalanceUpdate = document.getElementById('top-balance').innerText=topNewBalance
     const feniTotalDonationUpdate = document.getElementById('balance-feni').innerText = feniTotalDonation
 
+    const p = document.createElement('p')
+    p.innerText= `${feniTotalDonation}Taka is Donated for famine-2024 at feni, Bangladesh`
+    document.getElementById('history-feni').appendChild(p)
+
 })
 
 // quota movement------------>
@@ -45,8 +62,13 @@ document.getElementById('btn-quota').addEventListener('click',function(){
     
 
     if(inputNumber <= 0 || isNaN(inputNumber)){
-        document.getElementById('input3-error').classList.remove('hidden')
+        alert('invalid input')
+
         return;
+    }else{
+        
+        alert('successful')
+        
     }
     const balanceQuota = document.getElementById('balance-quota').innerText;
     const balanceNumber = parseFloat(balanceQuota)
@@ -56,8 +78,13 @@ document.getElementById('btn-quota').addEventListener('click',function(){
     const topNewBalance = topBalanceNumber - inputNumber
     const quotaTotalDonationUpdate = document.getElementById('balance-quota').innerText=quotaTotalDonation
     const topNewBalanceUpdate = document.getElementById('top-balance').innerText=topNewBalance
+
+    const p = document.createElement('p')
+    p.innerText= `${quotaTotalDonation}Taka is Donated for quota-2024 at quota, Bangladesh`
+    document.getElementById('history-quota').appendChild(p)
     
 })
+// button toggle start----->
 
 document.getElementById('history-btn').addEventListener('click',function(){
     const historyButton= document.getElementById('history-btn').classList.add('btn-donation')
@@ -76,3 +103,11 @@ document.getElementById('donation-btn').addEventListener('click',function(){
     const quotaSection = document.getElementById('quota-section').classList.remove('hidden') 
     const historySection = document.getElementById('history-section').classList.add('hidden')
 })
+// button toggle end----->
+
+// blog button start ----->
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href='/home.html'
+})
+
+// home button start ------>
