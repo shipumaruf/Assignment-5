@@ -24,6 +24,12 @@ document.getElementById('btn-nowakhali').addEventListener('click',function(){
     const p = document.createElement('p')
     p.innerText= `${nowakhaliTotalDonation}Taka is Donated for famine-2024 at nowakhali, Bangladesh`
     document.getElementById('history-nowakhali').appendChild(p)
+    const p3 = document.createElement('p')
+    p3.innerText= `${new Date().toLocaleDateString()}`
+    document.getElementById('history-nowakhali').appendChild(p3)
+    const p2 = document.createElement('p')
+    p2.innerText= `${new Date().toLocaleTimeString()}`
+    document.getElementById('history-nowakhali').appendChild(p2)
 })
 
 // donation for feni--------
@@ -52,6 +58,12 @@ document.getElementById('btn-feni').addEventListener('click',function(){
     const p = document.createElement('p')
     p.innerText= `${feniTotalDonation}Taka is Donated for famine-2024 at feni, Bangladesh`
     document.getElementById('history-feni').appendChild(p)
+    const p3 = document.createElement('p')
+    p3.innerText= `${new Date().toLocaleDateString()}`
+    document.getElementById('history-feni').appendChild(p3)
+    const p2 = document.createElement('p')
+    p2.innerText= `${new Date().toLocaleTimeString()}`
+    document.getElementById('history-feni').appendChild(p2)
 
 })
 
@@ -80,8 +92,14 @@ document.getElementById('btn-quota').addEventListener('click',function(){
     const topNewBalanceUpdate = document.getElementById('top-balance').innerText=topNewBalance
 
     const p = document.createElement('p')
-    p.innerText= `${quotaTotalDonation}Taka is Donated for quota-2024 at quota, Bangladesh`
+    p.innerText= `${quotaTotalDonation}Taka is Donated for quota-2024 at quota, Bangladesh `
     document.getElementById('history-quota').appendChild(p)
+    const p3 = document.createElement('p')
+    p3.innerText= `${new Date().toLocaleDateString()}`
+    document.getElementById('history-quota').appendChild(p3)
+    const p2 = document.createElement('p')
+    p2.innerText= `${new Date().toLocaleTimeString()}`
+    document.getElementById('history-quota').appendChild(p2)
     
 })
 // button toggle start----->
