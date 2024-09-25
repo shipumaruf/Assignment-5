@@ -2,7 +2,7 @@ document.getElementById('btn-nowakhali').addEventListener('click',function(){
     console.log('add donation btn')
     
     const inputNowakhali = document.getElementById('input-nowakhali').value ;
-    const inputNumber = parseFloat(inputNowakhali)
+    const inputNumber = Number(inputNowakhali)
     if(inputNumber <= 0 || isNaN(inputNumber)){
         alert('invalid input')
 
@@ -35,7 +35,7 @@ document.getElementById('btn-nowakhali').addEventListener('click',function(){
 // donation for feni--------
 document.getElementById('btn-feni').addEventListener('click',function(){
     const inputFeni = document.getElementById('input-feni').value
-    const inputNumber = parseFloat(inputFeni)
+    const inputNumber = Number(inputFeni)
 
     if(inputNumber <= 0 || isNaN(inputNumber)){
         alert('invalid input')
@@ -70,7 +70,7 @@ document.getElementById('btn-feni').addEventListener('click',function(){
 // quota movement------------>
 document.getElementById('btn-quota').addEventListener('click',function(){
     const inputQuota = document.getElementById('input-quota').value;
-    const inputNumber = parseFloat(inputQuota)
+    const inputNumber = Number(inputQuota)
     
 
     if(inputNumber <= 0 || isNaN(inputNumber)){
@@ -125,7 +125,7 @@ document.getElementById('donation-btn').addEventListener('click',function(){
 
 // blog button start ----->
 document.getElementById('blog-btn').addEventListener('click',function(){
-    window.location.href='/home.html'
+    window.location.href='./home.html'
 })
 
 // home button start ------>
